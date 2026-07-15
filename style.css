@@ -92,20 +92,20 @@ body {
     bottom: 20px;
 }
 .project-card-sticky {
-            position: sticky;
-            top: 50px; /* Alinha o topo do card logo abaixo do Navbar fixo */
-            margin-bottom: 5rem; /* Espaço para o próximo card deslizar antes de cobrir */
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
-            padding: 3rem;
-            transition: box-shadow 0.3s ease;
-        }
-        
-        /* Adiciona uma sombra mais forte no card de cima conforme ele é sobreposto */
+    position: relative;
+    top: auto;
+    scroll-margin-top: 110px;
+    margin-bottom: 5rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    padding: 3rem;
+    transition: box-shadow 0.3s ease;
+}
+
 .project-card-sticky:hover {
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
-        }
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
 
 /* ==========================================================================
    5. COMPONENTES TECNOLÓGICOS (BADGES & SKILL BOXES)
